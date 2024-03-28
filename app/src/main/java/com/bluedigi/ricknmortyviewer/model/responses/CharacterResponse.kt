@@ -1,8 +1,6 @@
 package com.bluedigi.ricknmortyviewer.model.responses
 
-import com.bluedigi.ricknmortyviewer.model.Character
-
-data class CharacterResponse(
+data class CharacterResponse<T>(
     val info: Info,
-    val results: List<Character>
+    val results: List<T>
 )
